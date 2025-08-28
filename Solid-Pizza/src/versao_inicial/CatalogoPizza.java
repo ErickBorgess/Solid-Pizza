@@ -2,8 +2,8 @@ package versao_inicial;
 
 public class CatalogoPizza {
 
-    public static String getPizza(int id) {
-        switch (id) {
+    public static String getPizza(int idPizza) {
+        switch (idPizza) {
             case 1:
                 return "Calabresa";
             case 2:
@@ -15,14 +15,11 @@ public class CatalogoPizza {
         }
     }
 
-    public static double getPreco(int id) { //TO-DO mudar parâmetro para nome(string)
-        if(id == 1) {
-            return 30.00;
-        }else if(id == 2) {
-            return 40.00;
-        }else if(id == 3) {
-            return 35.00;
-        }
-        return 0.0;
+    public static double getPreco(int idPizza) {
+        if(idPizza == 1) return 30.00;
+        if(idPizza == 2) return 40.00;
+        if(idPizza == 3) return 35.00;
+        return 0.00;
     }
+
 }
