@@ -1,4 +1,4 @@
-package versao_inicial;
+package versao_refatorada.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,10 +8,12 @@ public class Pedido {
     public double valorTotal;
     public String nomeCliente;
     public String tipoPagamento;
-    
-    public Pedido() {
-        pizzas = new ArrayList<>();
-        valorTotal = 0.00;
+
+    public Pedido(String cliente) {
+        this.nomeCliente = cliente;
+        this.pizzas = new ArrayList<>();
+        this.valorTotal = 0.00;
     }
 
+    
 }
